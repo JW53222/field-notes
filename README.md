@@ -7,6 +7,7 @@ I'm a mechanical design engineer at a make-to-order manufacturer. I opened VS Co
 ## Posts
 
 - **2026-07-12 — [Executable institutional knowledge: regression-testing a system you can't read](posts/2026-07-12-executable-institutional-knowledge.md)**
+- **2026-07-12 — [Build in public, retroactively: seven months of TradeSite, reconstructed from the commit history](posts/2026-07-12-tradesite-build-journal.md)**
   How 31 provenance-tracked, machine-checkable invariants turned forensic ERP discoveries into CI rules — and why this matters more when an AI assistant writes most of your code.
 
 Feedback: open an issue.
