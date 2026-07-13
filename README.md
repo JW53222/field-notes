@@ -14,6 +14,8 @@ I'm a mechanical design engineer at a make-to-order manufacturer. I opened VS Co
   Dead code gets instrumented, not deleted — deletion is earned by 30 days of runtime silence. Out-of-band edits get caught and held, never lost. Prevention is a hypothesis; detection is a fact.
 - **2026-07-12 — [The duplicate detector lives in the write loop](posts/2026-07-12-dup-detection-write-loop.md)**
   Embedding dedup inside the merge gate, built in five days — then an adversarial prior-art search found the product category being born the same season. Independent convergence, corrected same-day.
+- **2026-07-12 — [Survey the workforce: user research where the users are Claudes](posts/2026-07-12-survey-the-workforce.md)**
+  I built a lookup tool and my agents admitted to ignoring it — so I switched to injection, they dodged the trigger, and the harness answered. Evasion is the sincerest survey response.
 - **2026-07-12 — [Two dates for WebMCP: the gateway and the front door](posts/2026-07-12-webmcp-two-dates.md)**
   I shipped a tool surface for visiting agents in February, killed my own chatbot in April, and pulled the tools in front of the login wall in July — early adopter, not inventor, with the lineage cited.
 - **2026-07-12 — [Executable institutional knowledge: regression-testing a system you can't read](posts/2026-07-12-executable-institutional-knowledge.md)**
