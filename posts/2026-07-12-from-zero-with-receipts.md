@@ -57,7 +57,7 @@ I came in with zero software experience. I did not come in with zero engineering
 
 That's what the whole harness actually is — a validation engineer's instincts pointed at software. The invariants are incoming-inspection criteria. The oppositional reviewers are a design review board. The integrator is document control. The honesty hooks are a calibration schedule. I didn't learn those in six months; I brought them, and taught them to the machines.
 
-I'm not the perfectly-shaped anything. I'm the guy who sees all the threads sticking out and is really good at untangling fishing line — reconnecting them until the table of x,y points starts looking like a scatterplot with a trend in it. Six and a half months ago the threads were PineScript snippets pasted into three chat windows. The disclaimer was wrong by April. I should probably take it down.
+I'm not the perfectly-shaped anything. I'm the guy who sees all the threads sticking out and is really good at untangling fishing line — reconnecting them until the table of x,y points starts looking like a scatterplot with a trend in it. Six and a half months ago the threads were PineScript snippets pasted into three chat windows. The disclaimer was wrong by April. I should probably take it down. *(I did — updated 07-12-2026. There's a commit for it, naturally: the professional rewrite landed the same day the site opened a front door for non-human visitors.)*
 
 ---
 
