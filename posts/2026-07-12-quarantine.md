@@ -1,0 +1,25 @@
+# Quarantine: deleting code without trusting your own analysis
+
+*Published July 12, 2026. The events run May 15 – July 12, 2026. Dates, commit IDs, and quoted messages come from the git history. Tweaks have landed since; the commits cited are the ones that built the thing.*
+
+Every static analysis that tells you a function is dead is really telling you it found no *evidence of life*. Dynamic dispatch, config-string references, a sidecar process — there's a long tail of call mechanisms your analyzer didn't model, and the one you missed is the one that pages you. In a repo where AI agents write most of the code and generate dead ends faster than any human team, I needed a deletion protocol that didn't require believing my own tooling. I got there by treating it like the manufacturing problem it is: when you obsolete a part, you don't scrap the tooling the same day — you tag it, keep it on the shelf, and watch for field returns.
+
+## Mechanism one: the quarantine decorator
+
+On May 15–16 the audit pipeline flagged a wave of delete candidates. Instead of deleting them, one commit (`d681ad9ee`) applied `@quarantine` to 61 functions. The decorator's own docstring states the epistemics plainly: flagged-dead means "high but not absolute confidence." So the wrapper does two things — the call **still works** through any mechanism the analysis missed, and it logs at ERROR level with a greppable `QUARANTINE-CALL` marker, loud enough to cut through normal noise. Each quarantine carries a `reason` and a `since` date; after a 30-day window of zero log entries, the function has earned its deletion — by runtime silence, not static confidence. The candidates were ledgered in `docs/audit/quarantined-2026-05-15.md`, so the queue itself is versioned.
+
+My favorite receipt from that day is the confession in the log: `fe0ca6212` — "fix(audit): commit utils/quarantine.py — previously untracked." The quarantine tool spent its first hours as an untracked file. Even the discipline had to be caught by the discipline.
+
+## Mechanism two: edits that arrive around the pipeline
+
+The same instinct — catch and hold, never silently discard, never blindly trust — runs the other direction, at the merge boundary. In my setup one integrator agent owns the main tree; all work arrives as gated branch submissions. But guardrails only cover the approaches you thought of, so the tree itself is watched: a blessed-tree hygiene guard hook landed May 23 (`741ec1b96`), and a `SubagentStop` state backstop followed June 14 (`05e9e5f3e` — "blessed-clean invariant guard") for the cases where the first guard is bypassed. Files that appear in the protected tree without a pedigree get treated as *strays*: held, examined, and either adopted through the pipeline or removed — but never lost. There's a commit for that too: `78dcbc083`, July 10 — "land liq-saturation SML baseline plan (recovered from blessed stray)." A planning document that arrived out-of-band was recovered and landed properly, with its unusual origin recorded in the message.
+
+## The live demo, July 12
+
+While preparing another post, a Claude session dropped a one-line edit directly into the protected tree — around the submission process, not through it. The prevention layer never saw it coming, because the edit came from a direction it doesn't cover. The tree-state check flagged the stray when the next submission woke the integrator. One layer failed; the next one caught it; nothing was lost and nothing landed unreviewed. That's the whole design philosophy in one incident: **prevention is a hypothesis, detection is a fact.**
+
+## Why I'm publishing this
+
+I haven't found a public equivalent of either mechanism — deletion-by-runtime-silence for agent-flagged dead code, or stray-quarantine for out-of-band edits to an agent-managed tree. If prior art exists, I'd genuinely like the pointer (file an issue). If it doesn't, then this post is my timestamp: built May 16 through June 14, 2026, out of necessity, by someone who'd been coding for twenty weeks.
+
+And it's half of my answer to a label I keep hearing. None of this is vibe coding. Every mechanism in this post exists because I *refused* to trust a vibe — the vibe that the analyzer is right, that the guard covers everything, that the agents did what they said. The prompts are load-bearing engineering: they encode who may touch what, what must scream when touched, and what silence has to be earned before anything dies.
