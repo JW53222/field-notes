@@ -171,11 +171,13 @@ It then refused to enable "I Accept" until the text had actually been scrolled. 
 
 ![The original SuperCombo, resurrected](../images/feb08-03-supercombo.png)
 
-And the same product today, from the other direction — the page that exists for visitors who aren't human:
+That's the empty shell — the front door, not the house. To photograph the *working* product, the time machine went further: it stood the entire April 16 stack back up — frontend, backend, and a throwaway database — on isolated ports with the login wall patched out, then loaded the strategy workspace with a chart and opened the in-site AI assistant on the right:
+
+![The April 16 build, fully resurrected and running](../images/apr16-working-build.png)
+
+That assistant panel on the right is the in-site chat I deleted later that same day (see the pivot). The candles are a synthetic random walk — the market-data providers don't replay offline, so the chart is fed fabricated bars purely to show the UI rendering; everything else in the frame is the real April build. And the same product today, from the other direction — the page that exists for visitors who aren't human:
 
 ![The dynamic tool test page, July 12](../images/jul12-02-dynamic-tool-test.png)
-
-(Yes, the album is currently landing pages and warning modals. Everything interesting sits behind authentication; portraits of the working product need a login and are coming.)
 
 ## Epilogue
 
