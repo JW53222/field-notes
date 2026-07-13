@@ -1,6 +1,6 @@
 # Build in public, retroactively: seven months of TradeSite, reconstructed from the commit history
 
-I never kept a devlog. I didn't need to — 6,230 commits across four repos kept one for me. This post reconstructs it: what I built when, what replaced what, and death certificates for everything that didn't make it. Every date comes from a commit. An adversarial review agent then attacked every claim against the git evidence before I published; it caught ten errors, and I caught one of its own.
+I never kept a devlog. I didn't know I should, turns out I didn't need to — 6,230 commits across four repos kept one for me. This post reconstructs it: what I built when, what replaced what, and death certificates for everything that didn't make it. Every date comes from a commit. An adversarial review agent then attacked every claim against the git evidence before I published; it caught ten errors, and I caught one of its own.
 
 Cast: me — a mechanical design engineer who opened VS Code for the first time on December 28, 2025 — and a rotating team of Claude models that eventually became an organization of them.
 
