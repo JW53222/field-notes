@@ -157,27 +157,9 @@ What died, and what each death taught:
 - **The March 22–24 data loss.** A session's work — the IBKR socket client, database migrations, several features — was lost before it reached main. Six "recover" commits rebuilt it from two sources: eight files mined out of the session's own transcript ("Recovered from session transcript (3/22) — 8 files never committed") and a larger set salvaged from a dangling commit. Backups and WAL archival landed within 48 hours. The pipeline commits per merge now; we don't lose work anymore.
 - **One repo-history rewrite** (Jun 29), with a punchline. The first attempt was gentle: a `.mailmap` merge to consolidate author identities, its commit message proudly noting "no history rewrite." The actual rewrite happened the same day — it orphaned the old SHAs, silently wiped months off my GitHub contribution graph, and made the "no history rewrite" commit its own first casualty. It survives only in a backup bundle, disconnected from main. Read the docs on how contribution credit works *before* rewriting history.
 
-## The photo album
+## The time machine
 
-Seven months produced exactly one screenshot committed to git — but it's the right one: February 4, the legal disclaimer in its natural habitat, over the early strategy builder.
-
-![The disclaimer in the wild, February 4](../images/2026-02-04-ui.png)
-
-For everything else we built a time machine: extract the frontend at a historical commit straight from the git object store, build it, serve it, photograph it. The February 8 build compiled on the first try — and when the reviewing agent tried to close the disclaimer without reading it, the resurrected app guilt-tripped it with a modal I'd completely forgotten writing:
-
-![The guilt-trip modal: "TL;DR: It's worth the read"](../images/feb08-02-guilttrip.png)
-
-It then refused to enable "I Accept" until the text had actually been scrolled. Compliance achieved, here is the original SuperCombo photographed alive in its resurrection build — the 94-block beginner library, an empty canvas, and a red 401 banner because July's backend refuses to serve data to an unauthenticated February ghost:
-
-![The original SuperCombo, resurrected](../images/feb08-03-supercombo.png)
-
-That's the empty shell — the front door, not the house. To photograph the *working* product, the time machine went further: it stood the entire April 16 stack back up — frontend, backend, and a throwaway database — on isolated ports with the login wall patched out, then loaded the strategy workspace with a chart and opened the in-site AI assistant on the right:
-
-![The April 16 build, fully resurrected and running](../images/apr16-working-build.png)
-
-That assistant panel on the right is the in-site chat I deleted later that same day (see the pivot). The candles are a synthetic random walk — the market-data providers don't replay offline, so the chart is fed fabricated bars purely to show the UI rendering; everything else in the frame is the real April build. And the same product today, from the other direction — the page that exists for visitors who aren't human:
-
-![The dynamic tool test page, July 12](../images/jul12-02-dynamic-tool-test.png)
+Seven months produced exactly one screenshot committed to git (February 4: the legal disclaimer, in its natural habitat, over the early strategy builder). For everything else I built a time machine: extract the frontend at a historical commit straight from the git object store, build it, serve it, visit it. The February 8 build compiled on the first try. When the reviewing agent tried to close the disclaimer without reading it, the resurrected app guilt-tripped it with a modal I'd completely forgotten writing — "TL;DR: It's worth the read" — then refused to enable "I Accept" until the text had actually been scrolled. Past me, gating present me's agents. And when the original SuperCombo finally rendered — 94 beginner blocks, empty canvas — it wore a red 401 banner, because July's backend refuses to serve data to an unauthenticated February ghost. Correct behavior, five months early.
 
 ## Epilogue
 
