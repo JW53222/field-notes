@@ -2,7 +2,7 @@
 
 *Published July 12, 2026. The events: February 13, April 16, and July 11–12, 2026. Dates, commit IDs, and quoted messages come from the git history. Tweaks have landed since; the commits cited are the ones that built the thing.*
 
-Chrome's WebMCP origin trial opened this summer: pages can register tools on `navigator.modelContext`, and browser-resident agents can call them instead of scraping the DOM. My trading platform registered for the trial on July 11. The part worth writing down is that the platform had been serving tools to agents since **February 13** — five months before the browser had an official way to consume them.
+Chrome's WebMCP origin trial opened this summer: pages can register tools on `navigator.modelContext`, and browser-resident agents can call them instead of scraping the DOM. My trading platform registered for the trial on July 11. The part worth writing down is that the platform had been serving tools to agents since **February 13** — the same month Chrome's first behind-flags preview appeared, five months before the origin trial put native consumption in developers' hands.
 
 ## February 13: two bets, placed the same day
 
@@ -22,6 +22,10 @@ When the origin trial gave the ecosystem a real consumer, the missing piece was 
 
 That log also contains my favorite small commit of the year: `63d451967`, "professional rewrite of the landing legal-disclaimer modal." The disclaimer that had told every visitor its author "has absolutely no business whatsoever developing software of any kind" got its professional rewrite the same day the site opened a front door for non-human visitors. The joke retired itself.
 
-## Honest scope
+## Honest scope, adversarially checked
 
-This is an early bet, not a won one. WebMCP is Chrome-only and origin-trial-stage; mainstream agents mostly don't consume it natively yet; my surface is one site, not a standard. The claim I'm timestamping is narrower and, I think, more interesting: a solo builder, seven weeks into software at the time, shipped an agent-native tool surface in February 2026 because the login page kept being useless to the agents visiting it — and the browser platform arrived at the same shape five months later. Convergence from constraints, receipts attached. If you know earlier prior art for a production site treating visiting agents as first-class users via `modelContext`-style tools, file an issue; I'd love to read it.
+This is an early bet, not a won one. WebMCP is Chrome-only and origin-trial-stage; mainstream agents mostly don't consume it natively yet; my surface is one site, not a standard.
+
+And I'm not the first to serve tools to visiting agents — I sent a research agent to attack that idea the day this published, and here's the lineage it confirmed: MCP-B (the project whose library I build on) existed from January 2025, with its extension as an unofficial consumer all along; [jasonjmcghee's WebMCP widget](https://github.com/jasonjmcghee/WebMCP) let sites expose tools to client-side agents from March 2025; and the agency [StudioMeyer](https://studiomeyer.io/en/blog/webmcp-reality-check-may-2026) had been shipping agent-callable tool surfaces on real client sites since around May 2025, in a custom pre-spec shape. The pattern predates me. I was an early *adopter* in production, not the inventor of the idea.
+
+What survived the search as unclaimed, and what I'm actually timestamping: the **anonymous agent front door** — a real platform's logged-out routes where context tools answer honestly and gated data actions return a structured *account-required* instead of a login redirect, a leak, or silence — and the February-to-July arc of one product placing that bet before the platform made it comfortable. Convergence from constraints, receipts attached. If you know an earlier front-door-shaped implementation, file an issue; I'd love to read it.
