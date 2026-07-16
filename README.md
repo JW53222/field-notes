@@ -6,6 +6,12 @@ I'm a mechanical design engineer at a make-to-order manufacturer. I opened VS Co
 
 ## Posts
 
+- **2026-07-16 — [The scoreboard: every claim in this journal, tiered by what it survived](posts/2026-07-16-the-scoreboard.md)**
+  The grading system: prior-art bar is the union of shipped + published; provenance is a separate axis from novelty; personal origin requires typed, timestamped text. Every claim, placed.
+- **2026-07-16 — [Parallelizing the sequential: recurrence shapes, and a trade chain on a GPU](posts/2026-07-16-parallelizing-sequential-recurrences.md)**
+  Route every stateful indicator by the shape of its recurrence — including off the GPU when launches dominate — and replace trade-chain traversal with a log-depth prefix scan. Primitives conceded; the dispatch doctrine and the bit-identical referee claimed.
+- **2026-07-16 — [Borrowing your own login: scripting an SSO-gated enterprise API with zero stored credentials](posts/2026-07-16-borrowing-your-own-login.md)**
+  A how-to, not an invention: attach to your own logged-in browser over CDP and ride the session. Zero credentials at rest, full attributability, and the sharp edges stated.
 - **2026-07-16 — [Auditing my own origin stories](posts/2026-07-16-auditing-my-own-origin-stories.md)**
   I mined two gigabytes of my own session transcripts to find out whether I converged on published research or Claude fed it to me. Mostly the latter — the demotions, the one survivor, and why the audit is the asset.
 - **2026-07-16 — [The one that survived: an invariant I typed before I knew its name](posts/2026-07-16-the-one-that-survived.md)**
