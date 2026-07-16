@@ -6,6 +6,12 @@ I'm a mechanical design engineer at a make-to-order manufacturer. I opened VS Co
 
 ## Posts
 
+- **2026-07-16 — [Auditing my own origin stories](posts/2026-07-16-auditing-my-own-origin-stories.md)**
+  I mined two gigabytes of my own session transcripts to find out whether I converged on published research or Claude fed it to me. Mostly the latter — the demotions, the one survivor, and why the audit is the asset.
+- **2026-07-16 — [The one that survived: an invariant I typed before I knew its name](posts/2026-07-16-the-one-that-survived.md)**
+  Four weeks into ever writing software, I typed the causal single-pass property in plain English — a month after a preprint I'd never seen formalized it. The receipt, the oracle that enforces it, and the prior art conceded first.
+- **2026-07-16 — [The spec is the source: my audit harness crossed languages without its code](posts/2026-07-16-the-spec-is-the-source.md)**
+  A porting guide addressed "to a Claude agent in a different codebase" regenerated my Python audit harness in vanilla JS in a day. n=1, dated receipts — spec-as-source, actually run instead of talked about.
 - **2026-07-12 — [From zero, with receipts: six and a half months](posts/2026-07-12-from-zero-with-receipts.md)**
   Start here. What a mechanical engineer and father of two actually shipped in 6.5 months from a first-ever VS Code install — the scoreboard, five stories with receipts, and an honest ledger of who steered.
 - **2026-07-12 — [Where four months of my GitHub graph went](posts/2026-07-12-where-four-months-went.md)**
