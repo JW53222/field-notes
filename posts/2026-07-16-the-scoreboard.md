@@ -31,7 +31,7 @@
 *No convergence claim of any kind. The skill claimed is selection and honest implementation.*
 
 - **López de Prado overfitting stack** (CPCV/DSR/PBO) — supplied by Claude from training in March when I asked how to stop fooling myself; entered the repo three separate times. The code labels its own approximations as not-the-real-statistic. [The audit post](2026-07-16-auditing-my-own-origin-stories.md) tells the triple-arrival.
-- **LLM plateau-seeder** — design doc cites its own lineage (LMX, Eureka) at birth; EvoGPT is near-identical prior art. Origin contested (my recall says the frustration predates the doc); until the git check lands, the claim is "grounded in the literature at design time, gated by the production validator."
+- **LLM plateau-seeder** — design doc cites its own lineage (LMX, Eureka) at birth; EvoGPT is near-identical prior art. The git check has now run: the *problem* is receipted March 18 (a "population diversity collapse" troubleshooting section in the discovery docs, plus rules-based hybrid seeding landing the same day), and the LLM answer is first receipted April 26 — design doc and NSGA wire-in three commits apart. My recollection that I proposed it in March sits in the burned transcript window: possible, unprovable, not claimed. The claim: "grounded in the literature at design time, gated by the production validator."
 - **Permutation testing** — Westfall–Young is 1993 textbook statistics. Cited, not claimed.
 
 ## Claude-from-training, steered
