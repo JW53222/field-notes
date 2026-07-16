@@ -49,6 +49,8 @@ The machinery is deliberately boring — a grep finder plus an optional "this ot
 4. **Zero evaluations is yellow, not green.** If a rule's finder matched nothing anywhere, that's reported as "this rule didn't exercise," not silently passed. A rule that never fires might be protecting nothing — or might be misspelled.
 5. **A discovery isn't done until it's a rule.** The investigation that establishes a fact ends by writing the invariant, while the evidence is still on screen.
 
+*(Lineage disclosure, added 07-16-2026: these doctrines weren't invented in this codebase — they're a port. The audit harness in my other project matured first; I had an agent write a porting guide addressed to "a Claude agent in a different codebase," and this system's first calibration ran one day after the source system's timestamps. The doctrine crossed from a Python trading engine to a vanilla-JS ERP overlay essentially overnight, which is the finding I'd actually defend: not that the rules emerged here, but that they transplant.)*
+
 ## Isn't this just [Semgrep / CodeQL / a code knowledge graph]?
 
 Mechanically, yes — Semgrep could run every one of these rules, and if you have such tooling, use it as the engine. But the established categories are solving a different problem:
