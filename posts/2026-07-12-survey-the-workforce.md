@@ -1,6 +1,6 @@
 # Survey the workforce: user research where the users are Claudes
 
-*Published July 12, 2026. The events run roughly May 16 – June 3, 2026. Commit IDs and dates come from the git history; the surveys themselves happened inside agent sessions and left no commits — that part you'll have to take from me, which is exactly why the parts that did leave commits matter. (Confirmed the hard way, 07-16-2026: I ran a provenance audit over my own session archives to quote the survey exchanges verbatim, and can't — the transcripts from that window weren't retained. The bracketing commits below are the receipts; the confessions are memory.)*
+*Published July 12, 2026. The events run roughly May 16 – June 3, 2026. Commit IDs and dates come from the git history; the surveys themselves happened inside agent sessions and left no commits — that part you'll have to take from me, which is exactly why the parts that did leave commits matter. (Audit note, 07-16-2026: the session archives from that window weren't retained, so the survey exchanges can't be quoted verbatim; the bracketing commits below are the receipts.)*
 
 Harness tooling for AI agents has a measurement problem. You build a context system, a search index, a hint mechanism — and then you evaluate it by vibes, because the standard instrument for "is this tooling helping" is to survey your developers, and your developers are language models. The industry advice stops there.
 
