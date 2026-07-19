@@ -1,6 +1,6 @@
 # The scoreboard: every claim in this journal, tiered by what it survived
 
-*Published July 16, 2026. The grading system every claim now passes through before publication, and where each claim sits. It exists because two adversarial prior-art waves and [a provenance audit of my own transcripts](2026-07-16-auditing-my-own-origin-stories.md) kept demoting things I'd have otherwise overclaimed — so the grading became the product.*
+*Published July 16, 2026. The grading system every claim now passes through before publication, and where each claim sits. It exists because two prior-art search waves and [a provenance audit of my own transcripts](2026-07-16-auditing-my-own-origin-stories.md) kept demoting things I'd have otherwise overclaimed, so I wrote the rules down and put everything through them.*
 
 ## The rules
 
@@ -50,4 +50,4 @@
 
 ---
 
-One reading of this table is deflating: the top tier is narrow engineering assemblies and everything glamorous sits in lower tiers. The other reading is the point of publishing it: every row survived an adversarial process that was genuinely trying to move it down, and the rows that moved, moved in public. Grade inflation is the default in this genre. This is the alternative.
+One reading of this table is deflating: the top tier is narrow engineering assemblies and everything glamorous sits in lower tiers. The other reading is that every row survived a process that was genuinely trying to move it down — and the rows that moved, moved in public. I know which reading I trust.

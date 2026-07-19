@@ -12,7 +12,7 @@ On January 25, 2026 — four weeks after I opened VS Code for the first time —
 
 That's the whole artifact. No technique names, because I didn't know any. What it contains, in plain English: process the series **once, forward, sequentially**; maintain an **index of events** instead of re-deriving them; never re-scan. Reject the O(n²) shape, demand the O(n) one, delegate the implementation.
 
-Claude formalized it in the following turns as event-lifecycle tracking and wrote the first tracker that session. Over the next five months the same property kept getting more formal clothing, all supplied by the model, none by me: "causal," "no-lookahead," and eventually **prefix-invariance** — the requirement, now in a docstring and a parity test, that the last element of the j-th prefix run equals element j of a single full-series pass. Blocks that satisfy it are provably free of look-ahead; blocks that don't (structures back-stamped by future bars) provably aren't.
+Claude formalized it in the following turns as event-lifecycle tracking and wrote the first tracker that session. Over the next five months the same property kept getting more formal clothing: "causal," "no-lookahead," and eventually **prefix-invariance** — the requirement, now in a docstring and a parity test, that the last element of the j-th prefix run equals element j of a single full-series pass. Blocks that satisfy it are provably free of look-ahead; blocks that don't (structures back-stamped by future bars) provably aren't.
 
 ## What the repo does with it
 
@@ -23,10 +23,10 @@ This is the part I'd defend in a design review, because it's where the invariant
 
 ## The prior art, conceded first
 
-In December 2025 — about a month *before* my message — Saggese & Smith posted DataFlow ([arXiv 2512.23977](https://arxiv.org/abs/2512.23977)), which treats the same territory formally: point-in-time idempotency and tilability as the properties that make streaming and batch evaluation agree. I had never seen it. The provenance audit checked: the paper is named nowhere in any session, and the sessions in question made zero web calls. (Verified against the paper's abstract, not a theorem-by-theorem mapping — in keeping with this journal's general paranoia about its own citations.)
+In December 2025 — about a month *before* my message — Saggese & Smith posted DataFlow ([arXiv 2512.23977](https://arxiv.org/abs/2512.23977)), which treats the same territory formally: point-in-time idempotency and tilability as the properties that make streaming and batch evaluation agree. I had never seen it. The provenance audit checked: the paper is named nowhere in any session, and the sessions in question made zero web calls. (Verified against the paper's abstract, not a theorem-by-theorem mapping.)
 
 So the claim, stated at exactly its size: I did not invent this property, and a preprint beat my message by a month. What I did was **state it in my fourth week of ever writing software, from the problem alone, and then build a system where it's enforced by an oracle rather than remembered by a person.** The formal vocabulary was Claude's, from training. The property was mine, from the tape.
 
 ## Why this one gets a post
 
-Because of the direction of the audit that produced it. On July 15 I set out to *demote* my claims — miners over two gigabytes of my session transcripts, attributing every load-bearing idea to whoever typed it first. The de Prado stack, the GPU scan tricks, the seeder: all demoted to "Claude supplied it, I steered." This receipt went the other way. A claim that survives the process built to kill it is the only kind I'm interested in publishing anymore.
+Because of the direction of the audit that produced it. On July 15 I set out to *demote* my claims — miners over two gigabytes of my session transcripts, attributing every load-bearing idea to whoever typed it first. This receipt went the other way.

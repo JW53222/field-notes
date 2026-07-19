@@ -4,7 +4,7 @@
 
 There's a future-state idea circulating in the AI-coding discourse: the specification becomes the source artifact, and the code becomes a build product you can regenerate — different language, different environment, same system. Tooling proposals exist (GitHub's spec-kit is the well-known one). Mostly it's talked about as where things are heading.
 
-In April I did it by accident, and only realized this week — during [a provenance audit](2026-07-16-auditing-my-own-origin-stories.md) that was busy demoting my other claims — that the receipts for it were sitting in two repos the whole time.
+In April I did it by accident, and only realized this week — during [a provenance audit](2026-07-16-auditing-my-own-origin-stories.md) — that the receipts for it were sitting in two repos the whole time.
 
 ## The setup
 
